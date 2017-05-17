@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Practice Project A</title>
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+  <body>
+      <h3>Simple Calculator</h3>
+      <br/>
+      <form Name="calculator">
+      <table id="calculator" >
+      <tr>
+      <td colspan="4"><input id="txt" name="display" type="text"  onkeypress="return event.charCode >= 48 && event.charCode <= 57 "></td>
+      </tr>
+      <tr>
+      <td><input id="btn" type=button value="0" OnClick="calculator.display.value+='0'"></td>
+      <td><input id="btn" type=button value="1" OnClick="calculator.display.value+='1'"></td>
+      <td><input id="btn" type=button value="2" OnClick="calculator.display.value+='2'"></td>
+      <td><input id="btn" type=button value="+" OnClick="calculator.display.value+='+'"></td>
+      </tr>
+      <tr>
+      <td><input id="btn" type=button value="3" OnClick="calculator.display.value+='3'"></td>
+      <td><input id="btn" type=button value="4" OnClick="calculator.display.value+='4'"></td>
+      <td><input id="btn" type=button value="5" OnClick="calculator.display.value+='5'"></td>
+      <td><input id="btn" type=button value="-" OnClick="calculator.display.value+='-'"></td>
+      </tr>
+      <tr>
+      <td><input id="btn" type=button value="6" OnClick="calculator.display.value+='6'"></td>
+      <td><input id="btn" type=button value="7" OnClick="calculator.display.value+='7'"></td>
+      <td><input id="btn" type=button value="8" OnClick="calculator.display.value+='8'"></td>
+      <td><input id="btn" type=button value="x" OnClick="calculator.display.value+='*'"></td>
+      </tr>
+      <tr>
+      <td><input id="btn" type=button value="9" OnClick="calculator.display.value+='9'"></td>
+      <td><input id="btn" type=button value="(" OnClick="calculator.display.value+='('"></td>
+      <td><input id="btn" type=button value=")" OnClick="calculator.display.value+=')'"></td>
+      <td><input id="btn" type=button value="/" OnClick="calculator.display.value+='/'"></td>
+      </tr>
+      <tr>
+        <td colspan="2"><input id="btn" type=button value="Clear" OnClick="calculator.display.value=''"></td>
+        <td><input id="btn" type=button value="." OnClick="calculator.display.value+='.'"></td>
+        <td colspan="4"><input id="btn" type=button value="=" OnClick="calculator.display.value=eval(calculator.display.value)"></td>
+      </tr>
+      </table>
+      </form>
+  </body>
+</html>
